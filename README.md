@@ -2,6 +2,9 @@
 
 This project uses Quarkus framework.
 
+## Design 
+![Design](design.jpg)
+
 ## Running the application in dev mode
 
 Please run Redis cache store initially in the first terminal
@@ -23,7 +26,7 @@ cd content-analyzer
 
 ## Sample REST Calls
 
-###Curl command to create the analysis
+### Curl command to create the analysis
 ```
 curl -X 'POST' \
 'http://localhost:8080/analyzer/V1/analyses' \
@@ -34,27 +37,27 @@ curl -X 'POST' \
 }'
 ```
 
-####Expected output
+#### Expected output
 ```
 {
   "id": "<a UUID>"
 }
 ```
 
-###Curl command to delete the analysis
+### Curl command to delete the analysis
 ```
 curl -X 'DELETE' \
 'http://localhost:8080/analyzer/V1/analyses/uuid of the analysis>' \
 -H 'accept: */*'
 ```
-###Curl command to get the analysis summary
+### Curl command to get the analysis summary
 ```
 curl -X 'GET' \
 'http://localhost:8080/analyzer/V1/analyses/8d986b37-4008-438d-a731-cbfb12a29907/summary' \
 -H 'accept: */*'
 ```
 
-###Expected output
+### Expected output
 ```
 {
 "id": "98df872c-2f06-4c45-8073-d00b3eba7d0d",
@@ -70,14 +73,14 @@ curl -X 'GET' \
 }
 ```
 
-###Curl command to get the analysis details
+### Curl command to get the analysis details
 ```
 curl -X 'GET' \
 'http://localhost:8080/analyzer/V1/analyses/8d986b37-4008-438d-a731-cbfb12a29907/detail' \
 -H 'accept: */*'
 ```
 
-###Expected output
+### Expected output
 ```
 {
 "id": "70461720-57cb-4b94-a95d-63dcfd677918",
