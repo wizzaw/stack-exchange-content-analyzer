@@ -3,12 +3,12 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.com.nayki</groupId>
+    <groupId>com.nayki</groupId>
     <artifactId>stack-exchange-content-analyzer</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>analyzer</module>
-        <module>content-downloader</module>
+        <module>content-analysis-api</module>
+        <module>content-analyzer</module>
     </modules>
 </project>
