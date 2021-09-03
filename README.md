@@ -25,6 +25,7 @@ cd content-analyzer
 ```
 
 ## Sample REST Calls
+Swagger UI link http://localhost:8080/q/swagger-ui/
 
 ### Curl command to create the analysis
 ```
